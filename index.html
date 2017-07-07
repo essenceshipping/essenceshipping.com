@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>EWS</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--<link rel="shortcut icon" href="favicon.ico" />-->
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <style media="screen">
+      .left-caption{
+        height: 50%;
+        width: 20%;
+        min-width:135px;
+        font-size:2em;
+        color: #ffcc00;
+        padding-right: 5px;
+        text-align: right;
+        border-left: 4px solid #ffcc00;
+        line-height:65px;
+      }
+      .right-caption{
+        font-size: 2.5em;
+        height: 100%;
+        width: 55%;
+        color: black;
+        text-transform: uppercase;
+        text-align: left;
+        padding-left: 5px;
+        margin-top:75px;
+      }
+      @media only screen and (max-width: 600px) {
+        .right-caption{
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+
+
+    <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+      $("main").load("home.html");
+      $(".home, .brand-logo").on('click', function() {
+        $("main").load("home.html");
+        $('html,body').scrollTop(0);
+        $('.active-tab').removeClass('active-tab');
+        $('.home').addClass('active-tab');
+      });
+       $(".aboutus").on('click', function() {
+         $("main").load("aboutus.html");
+         $('html,body').scrollTop(0);
+         $('.active-tab').removeClass('active-tab');
+         $('.aboutus').addClass('active-tab');
+       });
+       $(".services").on('click', function() {
+         $("main").load("services.html");
+         $('html,body').scrollTop(0);
+         $('.active-tab').removeClass('active-tab');
+         $('.services').addClass('active-tab');
+       });
+       $(".contactus").on('click', function() {
+         $("main").load("contactus.html");
+         $('html,body').scrollTop(0);
+         $('.active-tab').removeClass('active-tab');
+         $('.contactus').addClass('active-tab');
+         });
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav>
+        <div class="nav-wrapper" style="background-color:rgba(0,0,0,0.85);padding:0 5% 0 5%">
+
+                <a href="javascript:void(0)" class="brand-logo"><img src="./images/logo.png" alt="" style="width:140px"/></a>
+
+                <a href="javascript:void(0)" data-activates='dropdown1' class="dropdown-button button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="hide-on-med-and-down" style="text-align:right;">
+                  <li><a href="javascript:void(0)" class="active-tab home">Home</a></li>
+                  <li><a href="javascript:void(0)" class="aboutus">About Us</a></li>
+                  <li><a href="javascript:void(0)" class="services">Services</a></li>
+                  <li><a href="javascript:void(0)" class="contactus">Contact Us</a></li>
+                </ul>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="javascript:void(0)" class="active-tab home">Home</a></li>
+                  <li><a href="javascript:void(0)" class="aboutus">About Us</a></li>
+                  <li><a href="javascript:void(0)" class="services">Services</a></li>
+                  <li><a href="javascript:void(0)" class="contactus">Contact Us</a></li>
+          </ul>
+
+
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+        <div id="ram">
+
+        </div>
+    </main>
+
+    <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="">Puma</h5>
+                  <ul>
+                    <li><a class="aboutus" href="javascript:void(0)">About Us</a></li>
+                    <li><a class="services" href="javascript:void(0)">Services</a></li>
+                    <li><a class="contactus" href="javascript:void(0)">Contact Us</a></li>
+                  </ul>
+
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h6 class="">Keep in Touch</h6>
+                  <ul class="social">
+                    <a href="#"><li style="
+    background-image: url('./images/facebook.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+"></li></a>
+<a href="#"><li style="
+    background-image: url('./images/twitter.svg');
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+"></li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © Linkedin Logistics Partners Pvt. Ltd. All right reserved.
+              <p class="right">Designed by <a href="#!">AC</a>
+              </div>
+            </div>
+    </footer>
+    
+    </body>
+
+</html>
